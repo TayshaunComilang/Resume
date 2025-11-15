@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayshaun Comilang's Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="background-container">
+        <img src="c:\Users\Administrator\Downloads\Background.jpg" alt="Background" class="background-img" />
+    </div>
+    
+    <header>
+        <div class="profile-container">
+            <img src="c:\Users\Administrator\Downloads\Profile Picture.jfif" alt="Profile Picture" class="profile-pic" />
+        </div>
+
+        <h1>Tayshaun Magwa Comilang</h1>   
+        <p>Aspiring Web Developer and Programmer</p> 
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>     ​​Hi! I’m Tayshaun Magwa Comilang, a 2nd year Bachelor of Science Information Technology student at the University of the Cordilleras. I’m passionate about web development, front-end design, and creating functional prototypes. I enjoy learning new technologies and improving my skills through hands-on projects.</p>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        
+        <h3>Educational Attainment</h3>
+        
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>School</th>
+                <th>Year</th>
+            </tr>
+            
+            <tr>
+                <td>Elementary</td>
+                <td>Pacalso Elementary School</td>
+                <td>2018</td>
+            </tr>
+            
+            <tr>
+                <td>Junior High School</td>
+                <td>Alejo M. Pacalso Memorial National High School</td>
+                <td>2022</td>
+            </tr>
+            
+            <tr>
+                <td>Senior High School</td>
+                <td>Alejo M. Pacalso Memorial National High School</td>
+                <td>2024</td>
+            </tr>
+            
+            <tr>
+                <td>College</td>
+                <td>University of the Cordilleras</td>
+                <td>2025–Present</td>
+            
+            </tr>
+        </table>
+        
+        <h3>Achievements</h3>
+        <table>
+            <tr>
+                <th>Award</th>
+                <th>Year</th>
+            </tr>
+            
+            <tr>
+                <td>Academic Achiever</td>
+                <td>2011–2018</td>
+            </tr>
+            
+            <tr>
+                <td>With Honors</td>
+                <td>2019–2020</td>
+            </tr>
+            
+            <tr>
+                <td>With High Honors</td>
+                <td>2021</td>
+            </tr>
+            
+            <tr>
+                <td>With Highest Honors</td>
+                <td>2022</td>
+            </tr>
+            
+            <tr>
+                <td>Cisco CCNA: Introduction to Networks</td>
+                <td>2025</td>
+            </tr>
+        </table>
+        
+        <h3>Skills</h3>
+        <div class="skill-item">Designing responsive websites using HTML and CSS</div>
+        <div class="skill-item">Writing program using Python and Java</div>
+        <div class="skill-item">Managing and querying data using MySQL</div>
+        <div class="skill-item">Collaborating on projects using Git and GitHub</div>
+        
+        <h3>Projects</h3>
+        <div class="project-item">
+            <h4>Multilevel Queue Scheduling Simulator</h4>
+            <p>A Python simulation of CPU scheduling using FCFS and Round Robin.</p>
+        </div>
+        
+        <div class="project-item">
+            <h4>INBOX Baguio Systems Analysis Study</h4>
+            <p>A systems analysis on the operations and inventory management of a concept store.</p>
+        </div>
+    
+    </section>
+    <section id="contact">
+
+        <h2>Contact Information</h2>
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
+            <p>Location: Itogon, Benguet, Philippines</p>
+        </div>
+        
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+            <p>Email: tayshauncomilang2006@gmail.com</p>
+        </div>
+        
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="icon">
+            <p>Phone: 0991-193-3924</p>
+        </div>
+        
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="icon">
+            <p>Facebook: <a href="https://www.facebook.com/tayyshann">facebook.com/tayyshann</a></p>
+        </div>
+        
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" class="icon">
+            <p>GitHub: <a href="https://github.com/TayshaunComilang">github.com/TayshaunComilang</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tayshaun Comilang | All Rights Reserved</p>
+    </footer>
+        
+        <script>
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+                target.classList.add('active');
+                target.scrollIntoView({behavior: 'smooth'});
+            });
+            });
+            </script>
+
+</body>
+</html>
